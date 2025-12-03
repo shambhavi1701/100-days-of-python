@@ -15,8 +15,13 @@ print()
 print("I have picked the person")
 print()
 
+#Using random.randint() operation
 index = random.randint(0,len(friends)-1)
 
 person_who_pays = friends[index]
 
 print(f"The person who will pay the bill is {person_who_pays}")
+
+#Using random.choice() operation
+tip_person = random.choice(friends)
+print(f"The person who pays the tip is {tip_person}")
